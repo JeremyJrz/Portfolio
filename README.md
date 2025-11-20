@@ -117,6 +117,8 @@ footer{
 .project-card:hover{transform:scale(1.05);} 
 .project-modal{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:9999;}
 .project-modal-content{background:white;padding:2rem;border-radius:1rem;max-width:600px;text-align:center;}
+@media(max-width:768px){ header .container{flex-direction:column;gap:1rem;} header h1{font-size:1.6rem;} header nav ul{flex-direction:column;gap:1rem;} .hero h2{font-size:1.6rem;} }
+@media(max-width:500px){ .skills-grid{grid-template-columns:1fr;} .projects-grid{grid-template-columns:1fr;} }
 </style>
 </head>
 <body>
