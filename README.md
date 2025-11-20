@@ -114,7 +114,7 @@ footer{
 }
 #projets h2 { font-size:3rem; font-weight:700; color:#0a4a7a; text-align:center; margin-bottom:3rem; }
 .project-card{cursor:pointer;transition:transform .3s;}
-.project-card:hover{transform:scale(1.05);}
+.project-card:hover{transform:scale(1.05);} 
 .project-modal{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:9999;}
 .project-modal-content{background:white;padding:2rem;border-radius:1rem;max-width:600px;text-align:center;}
 </style>
@@ -150,13 +150,17 @@ footer{
     <div class="skill-card"><i class="fa-solid fa-file-excel"></i><h3>Suite Office</h3></div>
     <div class="skill-card"><i class="fa-solid fa-palette"></i><h3>Canva</h3></div>
     <div class="skill-card"><i class="fa-solid fa-music"></i><h3>Ableton</h3></div>
+    <div class="skill-card"><i class="fa-solid fa-microchip"></i><h3>Arduino</h3></div>
+    <div class="skill-card"><i class="fa-brands fa-html5"></i><h3>HTML</h3></div>
+    <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><h3>CSS</h3></div>
+    <div class="skill-card"><i class="fa-solid fa-network-wired"></i><h3>Administration Réseaux</h3></div>
+    <div class="skill-card"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Troubleshooting</h3></div>
   </div>
 </section>
 
 <section id="projets">
   <h2>Projets</h2>
   <div class="projects-grid">
-
     <div class="project-card">
       <h3>Capteur météo – 2025</h3>
       <p>Projet Arduino : température, humidité, pression, luminosité, GPS…</p>
@@ -187,7 +191,6 @@ footer{
       <h3>Projet Personnel – Année</h3>
       <p>Description du projet personnel.</p>
     </div>
-
   </div>
 </section>
 
