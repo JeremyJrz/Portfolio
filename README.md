@@ -112,6 +112,11 @@ footer{
   text-align:center;padding:1.5rem;background:#050505;color:#aaa;margin-top:3rem;
   font-size:0.9rem;
 }
+#projets h2 { font-size:3rem; font-weight:700; color:#0a4a7a; text-align:center; margin-bottom:3rem; }
+.project-card{cursor:pointer;transition:transform .3s;}
+.project-card:hover{transform:scale(1.05);}
+.project-modal{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:9999;}
+.project-modal-content{background:white;padding:2rem;border-radius:1rem;max-width:600px;text-align:center;}
 </style>
 </head>
 <body>
@@ -190,5 +195,17 @@ footer{
   <p>© 2025 Jérémy Jerez</p>
 </footer>
 
+<script>
+const cards=document.querySelectorAll('.project-card');
+cards.forEach(card=>{
+ card.addEventListener('click',()=>{
+  const modal=document.createElement('div');
+  modal.className='project-modal';
+  modal.innerHTML=`<div class='project-modal-content'><h3>${card.querySelector('h3')?.innerText||''}</h3><p>${card.getAttribute('data-description')||"Description du projet à ajouter ici."}</p><button class='close-modal'>Fermer</button></div>`;
+  document.body.appendChild(modal);
+  modal.querySelector('.close-modal').addEventListener('click',()=>modal.remove());
+ });
+});
+</script>
 </body>
 </html>
