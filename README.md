@@ -126,9 +126,9 @@ footer{
     <h1 style="font-size:2rem;">Portfolio</h1>
     <nav>
       <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
+        <li><a href="#accueil"><strong>Accueil</strong></a></li>
+        <li><a href="#competences"><strong>Compétences</strong></a></li>
+        <li><a href="#projets"><strong>Projets</strong></a></li>
       </ul>
     </nav>
   </div>
