@@ -1,0 +1,492 @@
+
+/* ========================= */
+/* RESET */
+/* ========================= */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #eef4ff;
+
+    color: #1c2b40;
+
+    line-height: 1.6;
+}
+
+
+/* ========================= */
+/* HEADER HERO */
+/* ========================= */
+
+.hero{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 4rem 8%;
+
+    gap: 4rem;
+}
+
+
+
+.hero-text{
+    flex: 1;
+}
+
+
+.hero-text h1{
+
+    font-size: 4rem;
+
+    color: #2e4f88;
+
+    margin-bottom: 1rem;
+}
+
+
+.hero-text p{
+
+    font-size: 1.3rem;
+
+    color: #4c6288;
+
+    margin-bottom: 2rem;
+}
+
+
+/* ========================= */
+/* BOUTONS */
+/* ========================= */
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn{
+    position: relative;
+
+    padding: 1rem 1.8rem;
+
+    border: none;
+    border-radius: 16px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 170px;
+    height: 58px;
+
+
+}
+
+
+.btn{
+    background: linear-gradient(
+        135deg,
+        #7fa8ff,
+        #5d8df7
+    );
+
+    color: white;
+
+
+    transition: 0.3s;
+}
+
+
+.btn:hover{
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 35px rgba(93,141,247,0.45);
+}
+
+/* Boutons secondaires */
+
+.secondary{
+    background: rgba(255,255,255,0.7);
+
+    color: #2e4f88;
+
+    border: 2px solid rgba(127,168,255,0.4);
+
+    
+
+    box-shadow:
+        0 8px 10px rgba(0,0,0,0.05);
+}
+
+.secondary:hover{
+    background: white;
+
+    border-color: #7fa8ff;
+}
+
+
+/* ========================= */
+/* MODELE 3D */
+/* ========================= */
+
+.hero-model{
+
+    flex: 1;
+
+    max-width: 25em;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em;
+
+    background: linear-gradient(
+        145deg,
+        #1f2d4a,
+        #111827
+    );
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+
+.about {
+
+    margin-top: 3rem;
+    max-width: 700px; 
+
+}
+
+
+.hero-description{
+
+    font-size: 1.3rem;
+
+    color: #4c6288;
+}
+
+
+
+
+/* Icône du CV */
+
+.icone{
+    width: 10em;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.icone:hover {
+    transform: translateY(-5px);
+}
+
+.hero-left{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.hero-top{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 3rem;
+
+    margin-bottom: 2rem;
+}
+model-viewer{
+
+    width: 100%;
+    height: 500px;
+
+    background: transparent;
+}
+
+
+/* ========================= */
+/* SECTIONS */
+/* ========================= */
+
+section{
+
+    padding: 6rem 8%;
+}
+
+
+section h2{
+
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+
+    color: #2e4f88;
+}
+
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.skills-grid,
+.projects-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+
+.card,
+.project-card{
+
+    background: white;
+
+    padding: 2rem;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+
+.card:hover,
+.project-card:hover{
+
+    transform: translateY(-5px);
+}
+
+
+.project-card ul{
+
+    margin-top: 1rem;
+
+    padding-left: 1.2rem;
+}
+
+
+/* ========================= */
+/* CONTACT */
+/* ========================= */
+
+.contact{
+
+    text-align: center;
+}
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+
+    text-align: center;
+
+    padding: 2rem;
+
+    background: #dce8ff;
+
+    color: #3b4f74;
+}
+
+
+
+
+
+
+
+
+/* ========================= */
+/* POPUP */
+/* ========================= */
+
+.popup{
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: 0.3s;
+}
+
+.popup.active{
+
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+.popup-content{
+
+    background: rgb(250, 253, 252);
+
+    padding: 3rem;
+
+    border-radius: 20px;
+
+    max-width: 800px;
+
+    position: relative;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.close{
+
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width: 750px){
+
+    .hero{
+
+        flex-direction: column;
+
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 5%;
+    }
+
+
+    .hero-buttons{
+
+        justify-content: center;
+    }
+
+
+    .hero-text h1{
+
+        font-size: 2.4rem;
+        line-height: 1.1;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .icone {
+        width: 7rem;
+    }
+
+    .hero-model {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    model-viewer{
+
+        height: 300px;
+    }
+
+     section {
+        padding: 4rem 5%;
+    }  
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }  
+
+    .card,
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .popup-content {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .close {
+        top: 10px;
+        right: 15px;
+    }
+}

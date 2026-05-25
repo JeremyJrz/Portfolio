@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librairie pour afficher le modèle 3D -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <!-- Ton nom -->
+            <h1>Jérémy Jerez</h1>
+
+            <!-- Petit texte de présentation -->
+
+            <div class="hero-top">
+                <div class="hero-left">
+                    <p class="hero-description">
+                        Étudiant / Développeur / Artiste
+                    </p>
+
+
+
+                    <!-- Boutons -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">Mes projets</a>
+                        <a href="#contact" class="btn secondary">Contact</a>
+                        <button class="btn secondary" onclick="toggleAbout()">
+                            En savoir plus sur moi
+                        </button>
+                    </div>
+
+                </div>
+                <a href="Asset/CV_Jeremy_Jerez.pdf" download>
+                    <img src="Asset/img/icone_cv.png" alt="Icone de CV" class="icone"> </a>
+
+            </div>
+            <div class="about">
+                <div class="card">
+                    <h2>À propos</h2>
+
+                    <p>
+                        Actuellement en deuxième année d'école d'ingénieur au CESI de Rouen.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Zone du modèle 3D -->
+        <div class="hero-model">
+
+            <model-viewer src="Asset/model/GuitareV3.glb" auto-rotate interaction-prompt="none"
+                rotation-per-second="40deg" 
+                camera-controls 
+                camera-orbit="0deg 75deg 15m">
+            </model-viewer>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- SECTION À PROPOS -->
+    <!-- ========================= -->
+
+
+
+
+    <!-- ========================= -->
+    <!-- SECTION COMPÉTENCES -->
+    <!-- ========================= -->
+
+    <section class="skills">
+
+        <h2>Compétences :</h2>
+
+        <div class="skills-grid">
+
+            <div class="card">
+                <h3>LANGAGES :</h3>
+                <p>C++, Python, JavaScript, PHP</p>
+            </div>
+
+            <div class="card">
+                <h3>WEB :</h3>
+                <p>HTML, CSS</p>
+            </div>
+
+            <div class="card">
+                <h3>SYSTÈME :</h3>
+                <p>Linux (Ubuntu), windows</p>
+            </div>
+
+            <div class="card">
+                <h3>OUTILS :</h3>
+                <p>Git, Arduino, Cisco Packet Tracer, Ableton, Davinci Resolve</p>
+            </div>
+
+            <div class="card">
+                <h3>BUREAUTIQUE :</h3>
+                <p>Pack Office</p>
+            </div>
+
+            <div class="card">
+                <h3>SOFT SKILLS :</h3>
+                <p>Travail en équipe, rigueur, autonomie</p>
+            </div>
+
+            <div class="card">
+                <h3>Diplômes :</h3>
+                <p><ul>
+                    <li>Bac avec mention (spécialité math physique) </li>
+                    <li>2ème cycle hautbois et formation musicale classique valider </li>
+                    
+
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- SECTION PROJETS -->
+    <!-- ========================= -->
+
+    <section id="projects" class="projects">
+
+        <h2>Mes Projets :</h2>
+
+
+        <div class="projects-grid">
+
+     
+            <div class="project-card">
+
+                <h3>Capteur météo</h3>
+
+                <p>
+                    Codage en C a l’aide d’une carte Arduino afin de réaliser un capteur météo.
+                </p>
+
+                <ul>
+                    <li>Système embarqué</li>
+                </ul>
+
+            </div>
+
+
+      
+            <div class="project-card">
+
+                <h3>Jeu de la vie en C++</h3>
+
+                <p>
+                    Codage en C++ en utilisant la POO afin de créer un jeu de la vie.
+                </p>
+
+                <ul>
+                    <li>POO</li>
+                </ul>
+
+            </div>
+
+
+           
+            <div class="project-card">
+
+                <h3>Maquette réseau</h3>
+
+                <p>
+                    Mise en place d’une maquette réseau d’une ville via Cisco Packet Tracer.
+                </p>
+
+                <ul>
+
+                </ul>
+
+            </div>
+
+            
+            <div class="project-card">
+
+                <h3>Site web de recherche de stage</h3>
+
+                <p>
+                    Mise en place d’un site web, à l’aide d’HTML, CSS, PHP et Javascript (front et back)
+                </p>
+
+                <ul>
+                    <li>Frontend</li>
+                    <li>Backend</li>
+                </ul>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Job Étudiant chez sanofi le trait</h3>
+
+                <p>
+                    Mise en condition réelle au sein d’une entreprise.
+                    Lors de ce job étudiant, j’ai numérisé des documents que 
+                    j’ai ensuite intégrés dans la base de donnée de l’entreprise. 
+                    J’ai aussi actualisé les étiquettes et les indications présentes sur les portes.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Stage découverte ETHYPHARM | GRAND-QUEVILLY (76)</h3>
+
+                <p>
+                    Stage de 3ème de découverte du monde de l’entreprise
+                    Lors de ce stage, j’ai pu découvrir le monde de l’industrie pharmaceutique et des Bonnes Pratiques de Fabrication (BPF). 
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Stage de 12 semaines au Cerema</h3>
+
+                <p> Stage au sein du Cerema (GRAND-QUEVILLY (76))
+                    Développement d’un système acquisition de donnée de voiture (Python et C++)
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Création de musique pour jeu indépendant</h3>
+
+                <p>
+                    J'ai eu la chance de composer les musiques de jeu vidéo indépendant (SleepBound et Oath of Sin, disponnible sur Gamejolt)
+                </p>
+
+                <ul>
+                    <li>Projet perso</li>
+
+                </ul>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Participation à un concert caritatif</h3>
+
+                <p>
+                    Avec le groupe Do Brazil, j'ai pu jouer pour l'association DePommesEtDeRose.
+                </p>
+
+            </div>
+
+        </div>
+
+    
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- SECTION CONTACT -->
+    <!-- ========================= -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email : jerez.jeremy22@gmail.com</p>
+        <p>LinkedIn : Jérémy Jerez</p>
+        <p>GitHub : Jérémy.J</p>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+        <p>© 2026 - Portfolio</p>
+    </footer>
+
+
+  
+<!-- ========================= -->
+<!-- POPUP À PROPOS -->
+<!-- ========================= -->
+
+<div id="about-popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="toggleAbout()">
+            &times;
+        </span>
+
+        <h2>À propos de moi</h2>
+
+        <p>
+            Je suis actuellemnt sur ma deuxième année en cycle préparatoire intégré au CESI de Saint-Etienne-du-Rouvray. 
+            <br><br>Également musicien au conservatoire de Saint-Etienne-du-Rouvray (orchestre d'harmonie, hautbois classique, 
+            atelier de musique actuelle, musique assistée par ordinateur) et de Rouen (Formation musicale jazz et potentiellement 
+            l'année prochaine des cours de saxophone et d'atelier jazz)
+            <br>
+            De plus, j'apprend la modélisation 3d en autonomie (sur Blender)
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
